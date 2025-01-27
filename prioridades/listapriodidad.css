@@ -1,0 +1,16 @@
+body {
+    background-image: url('../assets/image/collage-gustos.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: black;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+}
