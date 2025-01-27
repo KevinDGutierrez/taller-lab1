@@ -1,0 +1,47 @@
+body {
+    background-image: url('../assets/image/collage-gustos.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: black;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo del contenedor ligeramente más oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px;
+}
+
+/* Estilo para los inputs */
+input.form-control {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con un poco de transparencia */
+    color: black; /* Color del texto negro */
+}
+
+/* Cambiar el color del placeholder */
+input::placeholder {
+    color: rgba(0, 0, 0, 0.6); /* Color de placeholder en un tono gris oscuro */
+}
+
+/* Modificar el botón de guardar para que se vea mejor */
+button[type="submit"] {
+    background-color: #007bff; /* Color de fondo azul para el botón */
+    color: white; /* Letra blanca */
+    border: none; /* Quitar bordes */
+    padding: 10px 20px;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+}
+
+/* Cambio en el color del botón cuando pasa el cursor */
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Azul más oscuro cuando se pasa el cursor */
+}

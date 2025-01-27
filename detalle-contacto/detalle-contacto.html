@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalles del Contacto</title>
+    <link href="detalle-contacto.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Detalles del Contacto</h1>
+            <ul>
+                <li><a href="../contactos/contactos.html">Volver a la lista de contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <br>
+    <div class="tablecontainer">
+        <div class="table1">
+            <table>
+                <caption>Información del Contacto</caption>
+                <tbody>
+                    <tr>
+                        <th>DPI</th>
+                        <td id="contacto-dpi"></td>
+                    </tr>
+                    <tr>
+                        <th>Nombre</th>
+                        <td id="contacto-nombre"></td>
+                    </tr>
+                    <tr>
+                        <th>Dirección</th>
+                        <td id="contacto-direccion"></td>
+                    </tr>
+                    <tr>
+                        <th>Teléfono</th>
+                        <td id="contacto-telefono"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <hr>
+
+    <script>
+        const contactos = {
+            1: { dpi: "1545 35468 1564", nombre: "Ian Pantuj", direccion: "Zona 10", telefono: "5555 0000" },
+            2: { dpi: "5560 03655 2263", nombre: "Valentin Gutierrez", direccion: "Zona 3", telefono: "5564 0023" },
+            3: { dpi: "1142 54654 3541", nombre: "Daniel Gutierrez", direccion: "Zona 7", telefono: "5050 6013" },
+            4: { dpi: "4568 45658 0003", nombre: "David Lux", direccion: "Zona 16", telefono: "5568 0055" },
+            5: { dpi: "1688 47554 0101", nombre: "Cris De la rosa", direccion: "Zona 18", telefono: "6666 9090" },
+        };
+
+        const params = new URLSearchParams(window.location.search);
+        const contactoId = params.get("contacto");
+
+        if (contactoId && contactos[contactoId]) {
+            const datos = contactos[contactoId];
+            document.getElementById("contacto-dpi").textContent = datos.dpi;
+            document.getElementById("contacto-nombre").textContent = datos.nombre;
+            document.getElementById("contacto-direccion").textContent = datos.direccion;
+            document.getElementById("contacto-telefono").textContent = datos.telefono;
+        } else {
+            const table = document.querySelector("table tbody");
+            table.innerHTML = "<tr><td colspan='2'>Contacto no encontrado.</td></tr>";
+        }
+    </script>
+</body>
+</html>

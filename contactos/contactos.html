@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Contactos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="contactos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body class="bg-dark text-white d-flex justify-content-center align-items-center vh-100">
+    <nav class="navbar navbar bg-white fixed-top" style="color: black;">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand mb-0 h1" href="../index.html">
+                    <img src="../assets/image/Logo.png" class="img-fluid me-2" style="height: 60px;">               
+                </a>
+                      <li style="list-style: none;"><a class="dropdown-item text-white" href="#">Nuevo</a></li>
+                      <li style="list-style: none;"><a class="dropdown-item text-white" href="#">Nuevo</a></li>
+                <li class="nav-item dropdown" style="color: white; list-style: none;">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">Contactos</a>
+                  <ul class="dropdown-menu bg-white" style="list-style: none;">
+                      <li style="list-style: none;"><a class="dropdown-item text-dark" href="../nuevo-contacto/nuevo-contacto.html">Nuevo</a></li>
+                      <li style="list-style: none;"><a class="dropdown-item text-dark" href="../favoritos/favoritos.html">Favoritos</a></li>
+                  </ul>
+              </li>
+              <li class="ms-3" style="list-style: none;">
+                  <a id="perfilButton" class="boton text-dark" href="#">Perfil del Usuario</a>
+              </li>
+              <li class="nav-item blog-link m-3" style="list-style: none;">
+                <a class="nav-link text-dark" href="../prioridades/prioridades.html">Prioridades</a>
+            </li>
+          </ul> 
+            </div>
+        </div>
+    </nav>
+
+    <div class="tablecontainer">
+        <div class="table1">
+            <table>
+                <caption>
+                    <a href="../detalle-contacto/detalle-contacto.html?contacto=1">Contacto #1</a>
+                </caption>                
+                <tbody>
+                    <tr>
+                        <th>DPI</th>
+                        <td>1545</td>
+                        <td>35468</td>
+                        <td>1564</td>
+                    </tr>
+                    <tr>
+                        <th>Nombre</th>
+                        <td>Ian</td>
+                        <td>Pantuj</td>
+                    </tr>
+                    <tr>
+                        <th>Direccion</th>
+                        <td>Zona</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <th>Telefono</th>
+                        <td>5555</td>
+                        <td>0000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+        </div>
+        <div class="table2">
+            <table>
+                <caption>
+                    <a href="../detalle-contacto/detalle-contacto.html?contacto=2">Contacto #2</a>
+                </caption>                
+                <tbody>
+                    <tr>
+                        <th>DPI</th>
+                        <td>5560</td>
+                        <td>03655</td>
+                        <td>2263</td>
+                    </tr>
+                    <tr>
+                        <th>Nombre</th>
+                        <td>Valentin</td>
+                        <td>Gutierrez</td>
+                    </tr>
+                    <tr>
+                        <th>Direccion</th>
+                        <td>Zona</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <th>Telefono</th>
+                        <td>5564</td>
+                        <td>0023</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+        </div>
+        <div class="table3">
+            <table>
+                <caption>
+                    <a href="../detalle-contacto/detalle-contacto.html?contacto=3">Contacto #3</a>
+                </caption>                
+                <tbody>
+                    <tr>
+                        <th>DPI</th>
+                        <td>1142</td>
+                        <td>54654</td>
+                        <td>3541</td>
+                    </tr>
+                    <tr>
+                        <th>Nombre</th>
+                        <td>Daniel</td>
+                        <td>Gutierrez</td>
+                    </tr>
+                    <tr>
+                        <th>Direccion</th>
+                        <td>Zona</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <th>Telefono</th>
+                        <td>5050</td>
+                        <td>6013</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+        </div>
+        <div class="table4">
+            <table>
+                <caption>
+                    <a href="../detalle-contacto/detalle-contacto.html?contacto=4">Contacto #4</a>
+                </caption>                
+                <tbody>
+                    <tr>
+                        <th>DPI</th>
+                        <td>4568</td>
+                        <td>45658</td>
+                        <td>0003</td>
+                    </tr>
+                    <tr>
+                        <th>Nombre</th>
+                        <td>David</td>
+                        <td>Lux</td>
+                    </tr>
+                    <tr>
+                        <th>Direccion</th>
+                        <td>Zona</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <th>Telefono</th>
+                        <td>5568</td>
+                        <td>0055</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+        </div>
+        <div class="table5">
+            <table>
+                <caption>
+                    <a href="../detalle-contacto/detalle-contacto.html?contacto=5">Contacto #5</a>
+                </caption>                
+                <tbody>
+                    <tr>
+                        <th>DPI</th>
+                        <td>1688</td>
+                        <td>47554</td>
+                        <td>0101</td>
+                    </tr>
+                    <tr>
+                        <th>Nombre</th>
+                        <td>Cris</td>
+                        <td>De la rosa</td>
+                    </tr>
+                    <tr>
+                        <th>Direccion</th>
+                        <td>Zona</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <th>Telefono</th>
+                        <td>6666</td>
+                        <td>9090</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <script>
+        
+        document.getElementById('perfilButton').addEventListener('click', function(event) {
+
+            const correo = sessionStorage.getItem('correo2');
+            const contrasena = sessionStorage.getItem('contrasena2');
+
+            if (correo && contrasena) {
+                Swal.fire({
+                    title: 'Perfil de Usuario',
+                    html: `<strong>Correo electrónico:</strong><br> ${correo}<br><br><strong>Contraseña:</strong><br> ${contrasena}`,
+                    confirmButtonText: 'Ok',
+                    imageUrl: 'https://i.ibb.co/XfBvB1d/login.png',
+                    imageAlt: 'Perfil de usuario'
+                });
+            } else {
+                Swal.fire({
+                    title: 'Error',
+                    text: 'No hay datos de usuario guardados',
+                    icon: 'error',
+                    confirmButtonText: 'Ok',
+                });
+            }
+        });
+
+        
+    </script>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
