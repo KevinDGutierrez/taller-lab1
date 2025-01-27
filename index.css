@@ -1,0 +1,45 @@
+body {
+    background-image: url('assets/image/collage-gustos.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: black;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+}
+  
+  .login-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Transparente oscuro */
+    color: white;
+    max-width: 400px;
+    width: 100%;
+}
+
+input.form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+input.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+button.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}

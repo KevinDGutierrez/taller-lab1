@@ -1,0 +1,95 @@
+body {
+    background-image: url('../assets/image/collage-gustos.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: black;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Estilos generales para el contenedor de las tablas */
+.tablecontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Estilos para cada tabla dentro del contenedor */
+.table1, .table2, .table3, .table4, .table5 {
+    flex: 1;
+    min-width: 250px; /* Asegura que las tablas no se reduzcan demasiado en pantallas pequeñas */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro y transparente */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra sutil alrededor de las tablas */
+}
+
+/* Estilos generales para las tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #f8f9fa; /* Letra blanca */
+}
+
+/* Estilos para los encabezados de las tablas */
+th {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro para los encabezados */
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Estilos para las celdas */
+td {
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro y transparente para celdas */
+    padding: 8px;
+    text-align: left;
+}
+
+/* Estilo para los enlaces dentro de las tablas (Contacto #1, #2, etc.) */
+caption {
+    margin: 10px 0;
+}
+
+caption a {
+    color: #f8f9fa; /* Color blanco para los enlaces */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+caption a:hover {
+    color: #0d6efd; /* Cambia el color del enlace al pasar el cursor */
+}
+
+/* Bordes de las tablas */
+th, td {
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Bordes claros y sutiles */
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.3); /* Fila par con fondo un poco más claro */
+}
+
+table tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.5); /* Fila impar con fondo más oscuro */
+}
+
+/* Estilo para los contenedores de las tablas en pantallas pequeñas */
+@media (max-width: 768px) {
+    .tablecontainer {
+        flex-direction: column;
+    }
+    .table1, .table2, .table3, .table4, .table5 {
+        min-width: 100%;
+    }
+}
